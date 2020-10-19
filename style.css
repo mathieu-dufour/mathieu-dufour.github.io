@@ -15,24 +15,34 @@ main {
 }
 
 nav {
+    position: fixed;
+    left: 5rem;
+    top: 50%;
+    transform: translateY(-50%);
+
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 10vh;
+    /*min-width: 10vh;*/
 }
 
 .nav-links {
     display: flex;
+    flex-direction: column;
     list-style: none;
 }
 
-.nav-links li {
-    padding-left: 10rem;
+.nav-links a {
     font-size: 1.2rem;
     color: white;
+    text-decoration: none;
 }
 
 #logo {
+    position: fixed;
+    left: 5rem;
+    top: 3rem;
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
     color: white;
@@ -51,7 +61,7 @@ nav {
     white-space: nowrap;
 }
 
-.page-title-container h2 {
+.page-title-container h1 {
     font-size: 4.5rem;
     font-family: "Heebo", sans-serif;
     color: white;
@@ -109,4 +119,29 @@ nav {
 .hide span {
     transform: translateY(100%);
     display: inline-block;
+}
+
+.education-section {
+    min-height: 100vh;
+    background: rgb(0 74 140);
+}
+
+.skills-section {
+    min-height: 100vh;
+    background: rgb(0 44 83);
+}
+
+.experience-section {
+    min-height: 100vh;
+    background: rgb(0 74 140);
+}
+
+.more-section {
+    min-height: 100vh;
+    background: rgb(0 44 83);
+}
+
+.contact-section {
+    min-height: 100vh;
+    background: rgb(0 74 140);
 }
