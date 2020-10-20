@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Heebo:wght@500;700&display=swap"
         rel="stylesheet">
+
+    <!-- Fullpage files -->
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <script type="text/javascript" src="fullpage.min.js"></script>
+
     <title>Mathieu D.</title>
 </head>
 
@@ -15,40 +20,43 @@
         <h1 id="logo">md</h1>
         <nav>
             <div class="nav-links">
-                <a href="#home-link">Home</a>
-                <a href="#education-link">Education</a>
-                <a href="#skills-link">Skills</a>
-                <a href="#experience-link">Experience</a>
-                <a href="#more-link">More</a>
-                <a href="#contact-link">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#more">More</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
-        <section class="landing" id="home-link">
-            <div class="page-title-container">
-                <h1>Mathieu Dufour</h1>
-                <h3>Software Engineer & Tech Enthusiast</h3>
+        <div id="fullpage">
+            <div class="section landing" data-anchor="home">
+                <div class="page-title-container">
+                    <h1>Mathieu Dufour</h1>
+                    <h3>Software Engineer & Tech Enthusiast</h3>
+                </div>
             </div>
-        </section>
+    
+            <div class="section education-section" data-anchor="education">
+                <h2>Education</h2>
+            </div>
+    
+            <div class="section skills-section" data-anchor="skills">
+                <h2>Skills</h2>
+            </div>
+    
+            <div class="section experience-section" data-anchor="experience">
+                <h2>Experience</h2>
+            </div>
+    
+            <div class="section more-section" data-anchor="more">
+                <h2>More</h2>
+            </div>
+    
+            <div class="section contact-section" data-anchor="contact">
+                <h2>Contact</h2>
+            </div>
+        </div>
 
-        <section class="education-section" id="education-link">
-            <h2>Education</h2>
-        </section>
-
-        <section class="skills-section" id="skills-link">
-            <h2>Skills</h2> 
-        </section>
-
-        <section class="experience-section" id="experience-link">
-            <h2>Experience</h2>
-        </section>
-
-        <section class="more-section" id="more-link">
-            <h2>More</h2>
-        </section>
-
-        <section class="contact-section" id="contact-link">
-            <h2>Contact</h2>
-        </section>
     </main>
 
     <div class="intro">
