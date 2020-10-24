@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
     font-family: "Heebo", sans-serif;
 }
@@ -70,8 +74,8 @@ nav {
 
 .page-title-container {
     position: absolute;
-    top: 30%;
     left: 50%;
+    top: 30%;
     transform: translate(-50%, -30%);
     display: flex;
     flex-direction: column;
@@ -95,8 +99,8 @@ nav {
 
 .page-subtitle {
     position: absolute;
-    top: 45%;
     left: 50%;
+    top: 45%;
     transform: translate(-50%, -45%);
     font-size: 1.5rem;
     font-family: "Heebo", sans-serif;
@@ -148,7 +152,7 @@ nav {
 }
 
 .education-section {
-    background: #313131;
+    background: #2f2f2b;
 }
 
 .skills-section {
@@ -165,4 +169,82 @@ nav {
 
 .contact-section {
     background: #313131;
+}
+
+.section h2 {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 16%;
+    transform: translate(-50%, -16%);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;*/
+    /*Force to stay on one line*/
+    /*overflow: hidden;
+    white-space: nowrap; */
+}
+
+.education-content {
+    position: absolute;
+    height: 360px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.content .logo {
+    padding-right: 30px;
+    /* position: absolute;
+    left: 33.3%;
+    top: 33.3%; 
+    transform: translate(-33.3%, -33.3%);*/
+    width: 360px;
+}
+
+.content .text-container {
+    width: 360px;
+    padding-left: 30px;
+    /*Force to stay on one line*/
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.content .text-container h4 {
+    color: #ff712a;
+    font-size: 1.2rem;
+}
+
+.content .text-container h5 {
+    color: #a7a7a7;
+    font-size: 1rem;
+}
+
+.content .text-container p {
+    color: white;
+    font-size: 1rem;
+}
+
+.experience-content {
+    position: absolute;
+    height: 360px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
