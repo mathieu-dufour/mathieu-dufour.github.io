@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Heebo:wght@500;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Heebo:wght@500;700&family=Ubuntu+Mono&display=swap"
         rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- Fullpage files -->
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
@@ -45,11 +49,13 @@
                         </a>
                         <div class="text-container">
                             <h5>September 2018 – December 2021</h5>
-                            <a target="_blank" href="https://www.mcgill.ca/study/2020-2021/faculties/science/undergraduate/programs/bachelor-science-bsc-major-software-engineering">
+                            <a target="_blank"
+                                href="https://www.mcgill.ca/study/2020-2021/faculties/science/undergraduate/programs/bachelor-science-bsc-major-software-engineering">
                                 <h4>Software Engineering Major</h4>
                             </a>
                             <p>Bachelor of Science</p>
-                            <a target="_blank" href="https://www.mcgill.ca/study/2020-2021/faculties/science/undergraduate/programs/bachelor-science-bsc-minor-entrepreneurship-science-students">
+                            <a target="_blank"
+                                href="https://www.mcgill.ca/study/2020-2021/faculties/science/undergraduate/programs/bachelor-science-bsc-minor-entrepreneurship-science-students">
                                 <h4>Minor in Entrepreneurship</h4>
                             </a>
                             <p>Desautels Faculty of Management</p>
@@ -109,19 +115,21 @@
 
     <div class="intro">
         <div class="intro-text">
-            <h1 class="hide">
-                <span>Hey, I'm</span>
-            </h1>
-            <h1 class="hide">
-                <span>Mathieu Dufour</span>
-            </h1>
+            <div id="input-1">
+                <span class="username">mathieu-dufour</span><span class="prompt">:~$</span>
+                <div class="inner">
+                    <span id="typing-1">ls</span>
+                </div>
+            </div>
+            <div id="output-1">&nbsp;&nbsp;interactive_resume</div>
+            <div id="input-2">
+                <span class="line-2 username">mathieu-dufour</span><span class="line-2 prompt">~ $</span>
+                <div class="inner">
+                    <span id="typing-2">./interactive_resume</span>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="slider"></div>
-    <!--Animation library-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-        crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 
