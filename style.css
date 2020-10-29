@@ -13,11 +13,105 @@ main {
 
     z-index: 2;
 
-    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 10s; /* Firefox < 16 */
-    -ms-animation: fadein 10s; /* Internet Explorer */
-    -o-animation: fadein 10s; /* Opera < 12.1 */
-    animation: fadein 10s;
+    -webkit-animation: fadein 6.7s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 6.7s; /* Firefox < 16 */
+    -ms-animation: fadein 6.7s; /* Internet Explorer */
+    -o-animation: fadein 6.7s; /* Opera < 12.1 */
+    animation: fadein 6.7s;
+}
+
+.intro {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    opacity: 0;
+
+    -webkit-animation: fadeout 6.7s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeout 6.7s; /* Firefox < 16 */
+    -ms-animation: fadeout 6.7s; /* Internet Explorer */
+    -o-animation: fadeout 6.7s; /* Opera < 12.1 */
+    animation: fadeout 6.7s;
+}
+
+.intro-text {
+    color: white;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 3.5rem;
+    white-space: nowrap; /* Keeps the content on a single line */
+}
+
+.intro-text div {
+    margin: 10px 0px;
+}
+
+.username {
+    color: #ff712a;
+}
+
+.prompt {
+    color: gray;
+}
+
+.inner {
+    display: inline-block;
+    width: fit-content;
+}
+
+#typing-1 {
+    display: inline-block;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    vertical-align: middle; /* Keep text aligned */
+    border-right: 0.15em solid transparent; /* The typwriter cursor */
+
+    -webkit-animation: typing-1 2s steps(2, end), blink-caret 0.75s step-end 3.1; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: typing-1 2s steps(2, end), blink-caret 0.75s step-end 3.1; /* Firefox < 16 */
+    -ms-animation: typing-1 2s steps(2, end), blink-caret 0.75s step-end 3.1; /* Internet Explorer */
+    -o-animation: typing-1 2s steps(2, end), blink-caret 0.75s step-end 3.1; /* Opera < 12.1 */
+    animation: typing-1 2s steps(2, end), blink-caret 0.75s step-end 3.1;
+}
+
+#output-1 {
+    visibility: hidden;
+
+    -webkit-animation: appear 0s 2.4s forwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: appear 0s 2.4s forwards; /* Firefox < 16 */
+    -ms-animation: appear 0s 2.4s forwards; /* Internet Explorer */
+    -o-animation: appear 0s 2.4s forwards; /* Opera < 12.1 */
+    animation: appear 0s 2.4s forwards;
+}
+
+.line-2 {
+    visibility: hidden;
+
+    -webkit-animation: appear 0s 2.4s forwards; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: appear 0s 2.4s forwards; /* Firefox < 16 */
+    -ms-animation: appear 0s 2.4s forwards; /* Internet Explorer */
+    -o-animation: appear 0s 2.4s forwards; /* Opera < 12.1 */
+    animation: appear 0s 2.4s forwards;
+}
+
+#typing-2 {
+    display: inline-block;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    vertical-align: middle; /* Keep text aligned */
+    visibility: hidden;
+    border-right: 0.15em solid transparent; /* The typwriter cursor */
+
+    -webkit-animation: appear 0s forwards, typing-2 3.5s steps(20, end), blink-caret 0.75s step-end 4.9; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: appear 0s forwards, typing-2 3.5s steps(20, end), blink-caret 0.75s step-end 4.9; /* Firefox < 16 */
+    -ms-animation: appear 0s forwards, typing-2 3.5s steps(20, end), blink-caret 0.75s step-end 4.9; /* Internet Explorer */
+    -o-animation: appear 0s forwards, typing-2 3.5s steps(20, end), blink-caret 0.75s step-end 4.9; /* Opera < 12.1 */
+    animation: appear 0s forwards, typing-2 3.5s steps(20, end), blink-caret 0.75s step-end 4.9;
+
+    animation-delay: 2.4s;
 }
 
 nav {
@@ -115,122 +209,28 @@ nav {
     color: white;
 }
 
-.intro {
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-
-    opacity: 0;
-
-    -webkit-animation: fadeout 10s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadeout 10s; /* Firefox < 16 */
-    -ms-animation: fadeout 10s; /* Internet Explorer */
-    -o-animation: fadeout 10s; /* Opera < 12.1 */
-    animation: fadeout 10s;
-}
-
-.intro-text {
-    color: white;
-    font-family: "Ubuntu Mono", monospace;
-    font-size: 3.5rem;
-    white-space: nowrap; /* Keeps the content on a single line */
-}
-
-.intro-text div {
-    margin: 10px 0px;
-}
-
-.username {
-    color: #ff712a;
-}
-
-.prompt {
-    color: gray;
-}
-
-.inner {
-    display: inline-block;
-    width: fit-content;
-}
-
-#typing-1 {
-    display: inline-block;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    vertical-align: middle; /* Keep text aligned */
-    border-right: 0.15em solid transparent; /* The typwriter cursor */
-
-    -webkit-animation: typing-1 2.5s steps(2, end), blink-caret 0.75s step-end 4.1; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: typing-1 2.5s steps(2, end), blink-caret 0.75s step-end 4.1; /* Firefox < 16 */
-    -ms-animation: typing-1 2.5s steps(2, end), blink-caret 0.75s step-end 4.1; /* Internet Explorer */
-    -o-animation: typing-1 2.5s steps(2, end), blink-caret 0.75s step-end 4.1; /* Opera < 12.1 */
-    animation: typing-1 2.5s steps(2, end), blink-caret 0.75s step-end 4.1;
-}
-
-#output-1 {
-    visibility: hidden;
-
-    -webkit-animation: appear 0s 3s forwards; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: appear 0s 3s forwards; /* Firefox < 16 */
-    -ms-animation: appear 0s 3s forwards; /* Internet Explorer */
-    -o-animation: appear 0s 3s forwards; /* Opera < 12.1 */
-    animation: appear 0s 3s forwards;
-}
-
-.line-2 {
-    visibility: hidden;
-
-    -webkit-animation: appear 0s 3s forwards; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: appear 0s 3s forwards; /* Firefox < 16 */
-    -ms-animation: appear 0s 3s forwards; /* Internet Explorer */
-    -o-animation: appear 0s 3s forwards; /* Opera < 12.1 */
-    animation: appear 0s 3s forwards;
-}
-
-#typing-2 {
-    display: inline-block;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    vertical-align: middle; /* Keep text aligned */
-    visibility: hidden;
-    border-right: 0.15em solid transparent; /* The typwriter cursor */
-
-    -webkit-animation: appear 0s 3s forwards, typing-2 5s steps(20, end), blink-caret 0.75s step-end 7.1; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: appear 0s 3s forwards, typing-2 5s steps(20, end), blink-caret 0.75s step-end 7.1; /* Firefox < 16 */
-    -ms-animation: appear 0s 3s forwards, typing-2 5s steps(20, end), blink-caret 0.75s step-end 7.1; /* Internet Explorer */
-    -o-animation: appear 0s 3s forwards, typing-2 5s steps(20, end), blink-caret 0.75s step-end 7.1; /* Opera < 12.1 */
-    animation: appear 0s 3s forwards, typing-2 5s steps(20, end), blink-caret 0.75s step-end 7.1;
-
-    animation-delay: 3s;
-}
-
 .section {
     min-height: 100vh;
 }
 
 .education-section {
-    background: #2f2f2b;
+    background: #143642;
 }
 
 .skills-section {
-    background: #545454;
+    background: #0b242d;
 }
 
 .experience-section {
-    background: #313131;
+    background: #143642;
 }
 
 .more-section {
-    background: #545454;
+    background: #0b242d;
 }
 
 .contact-section {
-    background: #313131;
+    background: #143642;
 }
 
 .section h2 {
@@ -250,10 +250,11 @@ nav {
 
 .education-content {
     position: absolute;
-    height: 360px;
+    height: 440px;
+    width: 850px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-44%, -37%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -261,14 +262,24 @@ nav {
 }
 
 .content {
+    width: 100%;
+    height: 173px;
     display: flex;
     flex-direction: row;
     /*justify-content: center;*/
     align-items: center;
 }
 
+.content .logo-link {
+    height: 170px;
+    flex: 2;
+    border-radius: 19px;
+    display: flex;
+    height: 100%;
+}
+
 .content .logo {
-    padding-right: 30px;
+    padding: 20px 30px;
     /* position: absolute;
     left: 33.3%;
     top: 33.3%; 
@@ -276,21 +287,38 @@ nav {
     width: 360px;
 }
 
+#mcgill-logo {
+    background: #ffffff;
+    border-radius: 19px 0 0 19px;
+}
+
+#ntu-logo {
+    background: #afc9f3;
+    border-radius: 19px 0 0 19px;
+}
+
 .content .text-container {
+    flex: 3;
+    height: 100%;
     width: 360px;
-    padding-left: 30px;
+    background: #36526b;
+    border-radius: 0 19px 19px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
     /*Force to stay on one line*/
     overflow: hidden;
     white-space: nowrap;
 }
 
 .content .text-container h4 {
-    color: #ff712a;
+    color: #afc9f3;
     font-size: 1.2rem;
 }
 
 .content .text-container h5 {
-    color: #a7a7a7;
+    color: #c5c5c5;
     font-size: 1rem;
 }
 
