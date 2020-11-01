@@ -1,5 +1,21 @@
 McGill University logo: https://freebiesupply.com/logos/mcgill-university-logo/
 NTU logo: https://www.logo.wine/logo/Nanyang_Technological_University
-CGI logo: https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/CGI_logo.svg/640px-CGI_logo.svg.png
+CGI logo: https://commons.wikimedia.org/wiki/File:CGI_logo.svg
 Hack&Roll 2020 logo: https://hacknroll.nushackers.org/
 mchacks VI logo: https://2019.mchacks.ca/
+Java logo: https://fr.wikipedia.org/wiki/Fichier:Java_Logo.svg
+HTML/CSS logo: https://commons.wikimedia.org/wiki/File:CSS3_and_HTML5_logos_and_wordmarks.svg
+JavaScript logo: https://commons.wikimedia.org/wiki/File:JavaScript-logo.png
+TypeScript logo: https://commons.wikimedia.org/wiki/File:Typescript_logo_2020.svg
+Angular logo: https://angular.io/presskit
+Flutter logo: https://commons.wikimedia.org/wiki/File:Google-flutter-logo.png
+Dart logo: https://commons.wikimedia.org/wiki/File:Dart_programming_language_logo.svg
+OCaml logo: https://commons.wikimedia.org/wiki/File:OCaml_Logo.svg
+C logo: https://en.wikipedia.org/wiki/C_(programming_language)#/media/File:The_C_Programming_Language_logo.svg
+powershell logo: https://gist.github.com/Xainey/d5bde7d01dcbac51ac951810e94313aa
+Bash logo: https://commons.wikimedia.org/wiki/File:Gnu-bash-logo.svg
+Python logo: https://commons.wikimedia.org/wiki/File:Python_logo_and_wordmark.svg
+MySQL logo: https://fr.wikipedia.org/wiki/Fichier:MySQL.svg
+docker logo: https://en.wikipedia.org/wiki/File:Docker_(container_engine)_logo.svg
+git logo: https://commons.wikimedia.org/wiki/File:Git-logo.svg
+golang logo: https://commons.wikimedia.org/wiki/File:Go_Logo_Blue.svg
