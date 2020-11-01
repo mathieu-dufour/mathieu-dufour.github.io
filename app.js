@@ -7,8 +7,8 @@ new fullpage('#fullpage', {
 });
 
 // disable scrolling during intro
-fullpage_api.setAllowScrolling(false);
-setTimeout(() => {  fullpage_api.setAllowScrolling(true); }, 10000);
+// fullpage_api.setAllowScrolling(false);
+// setTimeout(() => {  fullpage_api.setAllowScrolling(true); }, 10000);
 
 // To completely remove intro element from dom when it is done
 var animEndCount = 0;
