@@ -4,6 +4,7 @@ new fullpage('#fullpage', {
 	autoScrolling: true,
 	anchors: ["home", "education", "skills", "experience", "more", "contact"],
 	licenseKey: '40319E3A-196B4662-8916DF4C-3753A081',
+	// responsiveWidth: 600,
 });
 
 // disable scrolling during intro
@@ -19,3 +20,6 @@ $('.intro').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd',
 		$(this).remove();
 	}
 });
+
+var currentYear = new Date().getFullYear();
+document.getElementById('copyright').innerHTML = "&copy; Copyright " + currentYear + ", Mathieu Dufour";

@@ -296,9 +296,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     padding: 30px;
-    /*Force to stay on one line*/
-    overflow: hidden;
-    white-space: nowrap;
 }
 
 .horizontal-card .text-container h4 {
@@ -744,4 +741,12 @@ nav {
     100% {
         opacity: 0;
     }
+}
+
+footer {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    font-family: "Heebo", sans-serif;
+    color: white;
 }
