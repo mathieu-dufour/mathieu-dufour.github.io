@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+/* Color theme */
+:root {
+    /*blue*/
+    --dark-background: #0b242d;
+    --light-background: #143642;
+    --main-light: #afc9f3;
+    --main-dark: #36526b;
+}
+
 a {
     text-decoration: none;
 }
@@ -12,6 +21,8 @@ main {
     font-family: "Heebo", sans-serif;
 
     z-index: 2;
+    /* max-width: 1500px;
+    margin: auto; */
 
     /*-webkit-animation: fadein 6.7s; /* Safari, Chrome and Opera > 12.1 */
     /*-moz-animation: fadein 6.7s; /* Firefox < 16 */
@@ -116,8 +127,8 @@ main {
 
 nav {
     position: fixed;
-    left: 5rem;
-    top: 50%;
+    left: 3rem;
+    top: 60%;
     transform: translateY(-50%);
     z-index: 1;
 
@@ -125,7 +136,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /*min-width: 10vh;*/
+    width: 8rem;
 }
 
 .nav-links {
@@ -160,8 +171,7 @@ nav {
 
 .landing {
     height: 100vh;
-    padding: 0rem 5rem;
-    background: url("assets/PXL_20201015_191957566.PORTRAIT-01.COVER_2.jpg") no-repeat center fixed;
+    background: url("assets/PXL_20201015_191957566.PORTRAIT-01.COVER_2.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -205,67 +215,55 @@ nav {
 }
 
 .education-section {
-    background: #143642;
+    background: var(--light-background);
 }
 
 .skills-section {
-    background: #0b242d;
+    background: var(--dark-background);
 }
 
 .experience-section {
-    background: #143642;
+    background: var(--light-background);
 }
 
 .more-section {
-    background: #0b242d;
+    background: var(--dark-background);
 }
 
 .contact-section {
-    background: #143642;
+    background: var(--light-background);
 }
 
 .section h2 {
     color: white;
     font-size: 3rem;
     position: absolute;
-    left: 50%;
-    top: 16%;
-    transform: translate(-50%, -16%);
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;*/
-    /*Force to stay on one line*/
-    /*overflow: hidden;
-    white-space: nowrap; */
-}
-
-.education-content {
-    position: absolute;
-    height: 440px;
-    width: 850px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-44%, -37%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-    /* position: absolute;
-    height: 361px;
-    width: 748px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-44%, -34%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;*/
-}
-
-.education-content .content {
+    top: 0;
+    height: 20%;
     width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.section-container {
+    height: calc(80% - 6rem);
+    width: calc(100vw - 17rem);
+    position: absolute;
+    left: 14rem;
+    bottom: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontal-card {
+    width: 850px;
     height: 173px;
+    max-height: 42.66%;
+    min-height: 154px;
     display: flex;
     flex-direction: row;
     /*justify-content: center;*/
@@ -273,42 +271,27 @@ nav {
     border-radius: 19px;
     overflow: hidden;
 
-    /* width: 100%;
-    height: 154px;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; *
-    align-items: center;
-    border-radius: 19px;
-    overflow: hidden; */
+    margin: 1.5rem 0;
 }
 
-.education-content .content .logo-link {
+.horizontal-card .logo-link {
     height: 170px;
     flex: 2;
     display: flex;
     height: 100%;
 }
 
-.education-content .content .logo {
+.horizontal-card .logo {
     padding: 20px 30px;
-    /* position: absolute;
-    left: 33.3%;
-    top: 33.3%; 
-    transform: translate(-33.3%, -33.3%);*/
     width: 360px;
-    background: #afc9f3;
-
-    /*     padding: 20px 30px;
-    width: 100%;
-    background: #afc9f3; */
+    background: var(--main-light);
 }
 
-.education-content .content .text-container {
+.horizontal-card .text-container {
     flex: 3;
     height: 100%;
     width: 360px;
-    background: #36526b;
+    background: var(--main-dark);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -318,45 +301,24 @@ nav {
     white-space: nowrap;
 }
 
-.education-content .content .text-container h4 {
-    color: #afc9f3;
+.horizontal-card .text-container h4 {
+    color: var(--main-light);
     font-size: 1.2rem;
 }
 
-.education-content .content .text-container h5 {
+.horizontal-card .text-container h5 {
     color: #c5c5c5;
     font-size: 1rem;
 }
 
-.education-content .content .text-container p {
+.horizontal-card .text-container p {
     color: white;
     font-size: 1rem;
 }
 
-.experience-content {
-    position: absolute;
-    height: 360px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.skills-content {
-    position: absolute;
+.skills-grid {
     height: 440px;
     width: 850px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-44%, -37%);
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; */
-
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 29% auto;
@@ -370,7 +332,6 @@ nav {
 }
 
 .skill-category.spoken-languages {
-    /* height: 115px; */
     grid-row: 1/2;
     grid-column: 1/2;
     height: calc(100% - 40px);
@@ -388,16 +349,28 @@ nav {
 
 .skill-category .title {
     font-size: 1.4rem;
-    background-color: #36526b;
-    color: #afc9f3;
+    background-color: var(--main-dark);
+    color: var(--main-light);
     height: 35px;
     /* Center title vertically */
     line-height: 35px;
     text-align: center;
 }
 
+.experience-content {
+    /* position: absolute;
+    height: 360px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; */
+}
+
 .category-body {
-    background-color: #afc9f3;
+    background-color: var(--main-light);
     /* height: 80px; */
     height: calc(100% - 35px);
     display: flex;
@@ -414,7 +387,7 @@ nav {
 
 .skill-category.skill-category.spoken-languages .category-body li {
     margin: 0 0 3px 0;
-    color: #36526b;
+    color: var(--main-dark);
     font-size: 1.2rem;
 }
 
@@ -430,7 +403,7 @@ nav {
 }
 
 .level h1 {
-    color: #36526b;
+    color: var(--main-dark);
     font-size: 1.4rem;
 }
 
