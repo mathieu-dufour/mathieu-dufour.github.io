@@ -23,3 +23,21 @@ $('.intro').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd',
 
 var currentYear = new Date().getFullYear();
 document.getElementById('copyright').innerHTML = "&copy; Copyright " + currentYear + ", Mathieu Dufour";
+
+function flipCard(cardName, side) {
+	if (side == 'front') rotateCmd = "rotateX(0deg)";
+	else rotateCmd = "rotateX(180deg)";
+
+	var cardID = cardName + '-flip-card';
+
+	document.getElementById(cardID).style.transform = rotateCmd;
+}
+
+// Remove default outline if user is not using tab (accessibility)
+function handleFirstTab(e) {
+    if (e.keyCode === 9) { // the "I am a keyboard user" key
+        document.body.classList.add('user-is-tabbing');
+        window.removeEventListener('keydown', handleFirstTab);
+    }
+}
+window.addEventListener('keydown', handleFirstTab);

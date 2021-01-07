@@ -47,33 +47,110 @@
                         <a class="logo-link" target="_blank" href="https://www.mcgill.ca/">
                             <img class="logo" src="assets/mcgill-university-logo-svg-vector.svg" />
                         </a>
-                        <div class="text-container">
-                            <h5>September 2018 – December 2021</h5>
-                            <a target="_blank"
-                                href="https://www.mcgill.ca/study/2020-2021/faculties/science/undergraduate/programs/bachelor-science-bsc-major-software-engineering">
-                                <h4>Software Engineering Major</h4>
-                            </a>
-                            <p>Bachelor of Science</p>
-                            <a target="_blank"
-                                href="https://www.mcgill.ca/study/2020-2021/faculties/science/undergraduate/programs/bachelor-science-bsc-minor-entrepreneurship-science-students">
-                                <h4>Minor in Entrepreneurship</h4>
-                            </a>
-                            <p>Desautels Faculty of Management</p>
-                            <!--p>GPA: 3.42/4.0</p-->
+
+                        <div class="flip-card">
+                            <div class="flip-card-inner" id="mcgill-flip-card">
+                                <div class="flip-card-front">
+                                    <div class="text-container">
+                                        <h5>September 2018 – December 2021</h5>
+                                        <a target="_blank"
+                                            href="https://www.mcgill.ca/study/2020-2021/faculties/science/undergraduate/programs/bachelor-science-bsc-major-software-engineering">
+                                            <h4>Software Engineering Major</h4>
+                                        </a>
+                                        <p>Bachelor of Science</p>
+                                        <a target="_blank"
+                                            href="https://www.mcgill.ca/study/2020-2021/faculties/science/undergraduate/programs/bachelor-science-bsc-minor-entrepreneurship-science-students">
+                                            <h4>Minor in Entrepreneurship</h4>
+                                        </a>
+                                        <p>Desautels Faculty of Management</p>
+                                        <!--p>GPA: 3.42/4.0</p-->
+                                    </div>
+                                    <button onclick="flipCard('mcgill', 'back')">Relevant coursework</button>
+                                </div>
+                                <div class="flip-card-back" onmouseleave="flipCard('mcgill', 'front')">
+                                    <div class="text-container">
+                                        <h1>Relevant Coursework</h1>
+                                        <ul>
+                                            <li>
+                                                <a target="_blank"
+                                                    href="https://www.mcgill.ca/study/2020-2021/courses/comp-551">
+                                                    Applied Machine Learning
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank"
+                                                    href="https://www.mcgill.ca/study/2020-2021/courses/comp-303">
+                                                    Software Design
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank"
+                                                    href="https://www.mcgill.ca/study/2020-2021/courses/ecse-437">
+                                                    Software Delivery
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank"
+                                                    href="https://www.mcgill.ca/study/2020-2021/courses/comp-361d1">
+                                                    Software Engineering Project
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank"
+                                                    href="https://www.mcgill.ca/study/2020-2021/courses/comp-251">
+                                                    Algorithms and Data Structures
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button onclick="flipCard('mcgill', 'front')">Back</button>
+                                </div>
+                            </div>
                         </div>
+
+
                     </div>
 
                     <div class="horizontal-card">
                         <a class="logo-link" target="_blank" href="https://www.ntu.edu.sg/Pages/home.aspx">
                             <img class="logo" src="assets/Nanyang_Technological_University-Logo.wine.svg" />
                         </a>
-                        <div class="text-container">
-                            <h5>January – May 2020 </h5>
-                            <a target="_blank" href="https://www.ntu.edu.sg/Pages/home.aspx">
-                                <h4>Computer Science</h4>
-                            </a>
-                            <p>School of Computer Science and Engineering</p>
-                            <p>Exchange semester aborad</p>
+
+
+                        <div class="flip-card">
+                            <div class="flip-card-inner" id="ntu-flip-card">
+                                <div class="flip-card-front">
+                                    <div class="text-container">
+                                        <h5>January – May 2020 </h5>
+                                        <a target="_blank" href="https://www.ntu.edu.sg/Pages/home.aspx">
+                                            <h4>Computer Science</h4>
+                                        </a>
+                                        <p>School of Computer Science and Engineering</p>
+                                        <p>Exchange semester aborad</p>
+                                    </div>
+                                    <button onclick="flipCard('ntu', 'back')">Relevant coursework</button>
+                                </div>
+                                <div class="flip-card-back" onmouseleave="flipCard('ntu', 'front')">
+                                    <div class="text-container">
+                                        <h1>Relevant Coursework</h1>
+                                        <ul>
+                                            <li>
+                                                <a target="_blank"
+                                                    href="http://pace.ntu.edu.sg/LifelongLearning/Semester-Long-Courses/SpecialistCertificateCourseList/Pages/CourseDetail.aspx?CourseId=12e26513-bbad-40ad-9641-87f7fc914788">
+                                                    Artificial Intelligence
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank"
+                                                    href="https://scse.ntu.edu.sg/Programmes/CurrentStudents/Undergraduate/sw2/Pages/Teaching.aspx">
+                                                    Database Systems
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button onclick="flipCard('ntu', 'front')">Back</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -175,7 +252,7 @@
                             <h4>Software Developer, Cofounder</h4>
                             <p>- Social media-based travel planner. Not available yet. <br>
                                 - Technology used: Angular (TypeScript, HTML, CSS), Go, MySQL <br>
-                                - APIs: Google Maps, Google Sign-In, Facebook Login                           
+                                - APIs: Google Maps, Google Sign-In, Facebook Login
                             </p>
                         </div>
                     </div>
@@ -214,7 +291,9 @@
         </div>
     </div> -->
 
-    <footer><small><p id="copyright"></p></small></footer> 
+    <footer><small>
+            <p id="copyright"></p>
+        </small></footer>
     <script src="app.js"></script>
 </body>
 

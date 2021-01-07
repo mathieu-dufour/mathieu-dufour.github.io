@@ -7,14 +7,40 @@
 /* Color theme */
 :root {
     /*blue*/
-    --dark-background: #0b242d;
+    /* --dark-background: #0b242d;
     --light-background: #143642;
     --main-light: #afc9f3;
-    --main-dark: #36526b;
+    --main-dark: #36526b; */
+
+    --primary-background: #284b63;
+    --primary-card-background: #1f3b4e;
+
+    --secondary-background: #3c6e71;
+    --secondary-card-background: #27494b;
+
+    --logo-background: #ffffff;
+
+    --card-header-text: #ffffff;
+    --card-text: #d9d9d9;
+    --card-text-dark: #808080;
+
+    --nav-bar-background: #353535;
+    --nav-bar-hover: #3c3c3c;
+    --nav-bar-text: #ffffff;
+
+    --section-header: #ffffff;
 }
 
 a {
     text-decoration: none;
+}
+
+/* Remove default outline if user is not using tab (accessibility) */
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+  outline: none;
 }
 
 main {
@@ -142,21 +168,21 @@ nav {
 .nav-links {
     display: flex;
     flex-direction: column;
-    background-color: #222222;
+    background-color: var(--nav-bar-background);
     border-radius: 10px;
     overflow: hidden;
 }
 
 .nav-links a {
     font-size: 1.2rem;
-    color: white;
+    color: var(--nav-bar-text);
     text-align: center;
     width: 100%;
     padding: 15px;
 }
 
 .nav-links a:hover {
-    background-color: #3c3c3c;
+    background-color: var(--nav-bar-hover);
 }
 
 #logo {
@@ -215,23 +241,23 @@ nav {
 }
 
 .education-section {
-    background: var(--light-background);
+    background: var(--secondary-background);
 }
 
 .skills-section {
-    background: var(--dark-background);
+    background: var(--primary-background);
 }
 
 .experience-section {
-    background: var(--light-background);
+    background: var(--secondary-background);
 }
 
 .more-section {
-    background: var(--dark-background);
+    background: var(--primary-background);
 }
 
 .contact-section {
-    background: var(--light-background);
+    background: var(--secondary-background);
 }
 
 .section h2 {
@@ -242,7 +268,7 @@ nav {
     height: 20%;
     width: 100%;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
 }
 
@@ -284,33 +310,94 @@ nav {
 .horizontal-card .logo {
     padding: 20px 30px;
     width: 360px;
-    background: var(--main-light);
+    background: var(--logo-background);
 }
 
-.horizontal-card .text-container {
+.flip-card {
     flex: 3;
     height: 100%;
     width: 360px;
-    background: var(--main-dark);
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 0 19px 19px 0;
+    background: var(--secondary-card-background);
+    display: flex;
+}
+
+.flip-card-back {
+    transform: rotateX(180deg);
+}
+
+.horizontal-card .text-container {
+    flex: 5;
+    height: 100%;
+    width: 100%;
+    margin-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
+    align-items: flex-start;
 }
 
 .horizontal-card .text-container h4 {
-    color: var(--main-light);
+    color: var(--card-header-text);
     font-size: 1.2rem;
 }
 
 .horizontal-card .text-container h5 {
-    color: #c5c5c5;
+    color: var(--card-text);
     font-size: 1rem;
 }
 
 .horizontal-card .text-container p {
-    color: white;
+    color: var(--card-text);
     font-size: 1rem;
+}
+
+.flip-card button {
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+    flex: 1;
+    bottom: 5px;
+    margin: auto 15px 15px 0;
+    background: var(--logo-background);
+}
+
+.flip-card button:hover {
+    background: var(--card-text);
+}
+
+.flip-card-back h1 {
+    font-size: 1.5rem;
+    color: var(--card-header-text);
+}
+
+.flip-card-back ul {
+    margin-left: 23px;
+    color: var(--card-text);
+}
+
+.flip-card-back a {
+    color: var(--card-text);
 }
 
 .skills-grid {
@@ -346,8 +433,8 @@ nav {
 
 .skill-category .title {
     font-size: 1.4rem;
-    background-color: var(--main-dark);
-    color: var(--main-light);
+    background-color: var(--primary-card-background);
+    color: var(--section-header);
     height: 35px;
     /* Center title vertically */
     line-height: 35px;
@@ -367,7 +454,7 @@ nav {
 }
 
 .category-body {
-    background-color: var(--main-light);
+    background-color: var(--logo-background);
     /* height: 80px; */
     height: calc(100% - 35px);
     display: flex;
@@ -384,7 +471,7 @@ nav {
 
 .skill-category.skill-category.spoken-languages .category-body li {
     margin: 0 0 3px 0;
-    color: var(--main-dark);
+    color: var(--card-text-dark);
     font-size: 1.2rem;
 }
 
@@ -400,7 +487,7 @@ nav {
 }
 
 .level h1 {
-    color: var(--main-dark);
+    color: var(--card-text-dark);
     font-size: 1.4rem;
 }
 
@@ -414,6 +501,14 @@ nav {
 .skill-category.technologies img {
     max-height: 53px;
     max-width: 90px;
+}
+
+footer {
+    position: fixed;
+    bottom: 2px;
+    right: 1rem;
+    font-family: "Heebo", sans-serif;
+    color: white;
 }
 
 /*** ANIMATIONS ***/
@@ -741,12 +836,4 @@ nav {
     100% {
         opacity: 0;
     }
-}
-
-footer {
-    position: fixed;
-    bottom: 2px;
-    right: 2px;
-    font-family: "Heebo", sans-serif;
-    color: white;
 }
