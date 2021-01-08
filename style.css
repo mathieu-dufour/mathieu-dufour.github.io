@@ -12,19 +12,18 @@
     --main-light: #afc9f3;
     --main-dark: #36526b; */
 
-    --primary-background: #284b63;
-    --primary-card-background: #1f3b4e;
+    --primary-background: #4b4b4b;
+    --primary-card-background: #585858;
+    --secondary-background: #242424;
+    --secondary-card-background: #2f2e2e;
 
-    --secondary-background: #3c6e71;
-    --secondary-card-background: #27494b;
-
-    --logo-background: #ffffff;
+    --logo-background: #444444;
 
     --card-header-text: #ffffff;
     --card-text: #d9d9d9;
     --card-text-dark: #808080;
 
-    --nav-bar-background: #353535;
+    --nav-bar-background: #444444;
     --nav-bar-hover: #3c3c3c;
     --nav-bar-text: #ffffff;
 
@@ -263,6 +262,7 @@ nav {
 .section h2 {
     color: white;
     font-size: 3rem;
+    font-weight: normal;
     position: absolute;
     top: 0;
     height: 20%;
@@ -296,12 +296,11 @@ nav {
     align-items: center;
     border-radius: 19px;
     overflow: hidden;
-
     margin: 1.5rem 0;
+    box-shadow: 0 2px #1b1b1b, inset 0 2px 2px 0 hsl(0 0% 100% / 0.24);
 }
 
 .horizontal-card .logo-link {
-    height: 170px;
     flex: 2;
     display: flex;
     height: 100%;
@@ -311,6 +310,7 @@ nav {
     padding: 20px 30px;
     width: 360px;
     background: var(--logo-background);
+    box-shadow: 0 2px #1b1b1b, inset 0 2px 2px 0 hsl(0 0% 100% / 0.24);
 }
 
 .flip-card {
@@ -327,7 +327,6 @@ nav {
     height: 100%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card-front,
@@ -338,8 +337,9 @@ nav {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 0 19px 19px 0;
-    background: var(--secondary-card-background);
     display: flex;
+    background: var(--secondary-card-background);
+    box-shadow: 0 2px #1b1b1b, inset 0 2px 2px 0 hsl(0 0% 100% / 0.24);
 }
 
 .flip-card-back {
@@ -380,10 +380,13 @@ nav {
     bottom: 5px;
     margin: auto 15px 15px 0;
     background: var(--logo-background);
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.2px;
 }
 
 .flip-card button:hover {
-    background: var(--card-text);
+    background: #656565;
 }
 
 .flip-card-back h1 {
