@@ -12,16 +12,19 @@
     --main-light: #afc9f3;
     --main-dark: #36526b; */
 
-    --primary-background: #4b4b4b;
+    --primary-background: #333333;
     --primary-card-background: #585858;
-    --secondary-background: #242424;
-    --secondary-card-background: #2f2e2e;
+    --primary-logo-background: #e4e4e4;
 
-    --logo-background: #444444;
+    --secondary-background: #242424;
+    --secondary-card-background: #2e2e2e;
+    --secondary-logo-background: #444444;
 
     --card-header-text: #ffffff;
     --card-text: #d9d9d9;
-    --card-text-dark: #808080;
+
+    --skill-level-text: #4a4a4a;
+    --skill-content-text: #565656;
 
     --nav-bar-background: #444444;
     --nav-bar-hover: #3c3c3c;
@@ -306,7 +309,7 @@ nav {
 .horizontal-card .logo {
     padding: 20px 30px;
     width: 360px;
-    background: var(--logo-background);
+    background: var(--secondary-logo-background);
     box-shadow: 0 2px #1b1b1b, inset 0 2px 2px 0 hsl(0 0% 100% / 0.24);
     border-radius: 19px 0 0 19px;
 }
@@ -377,7 +380,7 @@ nav {
     flex: 1;
     bottom: 5px;
     margin: auto 15px 15px 0;
-    background: var(--logo-background);
+    background: var(--secondary-logo-background);
     color: white;
     font-size: 15px;
     letter-spacing: 0.2px;
@@ -409,14 +412,16 @@ nav {
     width: 850px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 29% auto;
+    grid-template-rows: 30% auto;
     justify-items: center;
 }
 
 .skill-category {
     width: 385px;
     border-radius: 19px;
-    overflow: hidden;
+    overflow: hidden;    
+    box-shadow: 0 2px #1b1b1b, inset 0 2px 2px 0 hsl(0 0% 100% / 0.24);
+    background-color: var(--primary-card-background);
 }
 
 .skill-category.spoken-languages {
@@ -437,12 +442,11 @@ nav {
 
 .skill-category .title {
     font-size: 1.4rem;
-    background-color: var(--primary-card-background);
     color: var(--section-header);
-    height: 35px;
-    /* Center title vertically */
+    /* height: 35px; */
     line-height: 35px;
     text-align: center;
+    padding: 5px 0;
 }
 
 .experience-content {
@@ -458,9 +462,8 @@ nav {
 }
 
 .category-body {
-    background-color: var(--logo-background);
-    /* height: 80px; */
-    height: calc(100% - 35px);
+    background-color: var(--primary-logo-background);
+    height: calc(100% - 45px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -475,7 +478,7 @@ nav {
 
 .skill-category.skill-category.spoken-languages .category-body li {
     margin: 0 0 3px 0;
-    color: var(--card-text-dark);
+    color: var(--skill-content-text);
     font-size: 1.2rem;
 }
 
@@ -491,7 +494,7 @@ nav {
 }
 
 .level h1 {
-    color: var(--card-text-dark);
+    color: var(--skill-level-text);
     font-size: 1.4rem;
 }
 
@@ -505,6 +508,11 @@ nav {
 .skill-category.technologies img {
     max-height: 53px;
     max-width: 90px;
+}
+
+.horizontal-card.experience {
+    background: var(--secondary-card-background);
+    box-shadow: 0 2px #1b1b1b, inset 0 2px 2px 0 hsl(0 0% 100% / 0.24);
 }
 
 footer {
