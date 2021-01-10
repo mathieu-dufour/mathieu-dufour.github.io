@@ -515,6 +515,70 @@ nav {
     box-shadow: 0 2px #1b1b1b, inset 0 2px 2px 0 hsl(0 0% 100% / 0.24);
 }
 
+.more-grid {
+    height: 440px;
+    width: 850px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    gap: 15px;
+}
+
+.more-grid .content {
+    box-shadow: 0 2px #1b1b1b, inset 0 2px 2px 0 hsl(0 0% 100% / 0.24);
+    border-radius: 19px;
+    height: 100%;
+    width: 100%;
+}
+
+.more-grid .content-header {
+    background: var(--primary-card-background);
+    box-shadow: 0 2px #1b1b1b, inset 0 2px 2px 0 hsl(0 0% 100% / 0.24);
+    border-radius: 19px 19px 0 0;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.more-grid .logo-link {
+    display: inline-block;
+    height: 100%;
+    flex: 1;
+    text-align: center;
+}
+
+.more-grid .header-logo {
+    height: 100%;
+}
+
+.more-grid .header-title {
+    flex: 3;
+    color: var(--section-header);
+    display: inline-block;
+    text-align: center;
+}
+
+.more-grid .content-body {
+    background: var(--primary-logo-background);
+    border-radius: 0 0 19px 19px;
+    height: 60%;
+}
+
+.more-grid .content-body ul {
+    padding-top: 5px;
+    margin-left: 37px;
+    color: var(--skill-level-text);
+}
+
+.more-grid .content-body a {
+    color: var(--skill-level-text);
+}
+.more-grid .content-body a:hover {
+    color: black;
+}
+
 footer {
     position: fixed;
     bottom: 2px;
