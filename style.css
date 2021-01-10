@@ -144,11 +144,11 @@ main {
     visibility: hidden;
     border-right: 0.15em solid transparent; /* The typwriter cursor */
 
-    -webkit-animation: appear 0s forwards, typing-2 3.5s steps(20, end), blink-caret 0.75s step-end 4.9; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: appear 0s forwards, typing-2 3.5s steps(20, end), blink-caret 0.75s step-end 4.9; /* Firefox < 16 */
-    -ms-animation: appear 0s forwards, typing-2 3.5s steps(20, end), blink-caret 0.75s step-end 4.9; /* Internet Explorer */
-    -o-animation: appear 0s forwards, typing-2 3.5s steps(20, end), blink-caret 0.75s step-end 4.9; /* Opera < 12.1 */
-    animation: appear 0s forwards, typing-2 3.5s steps(20, end), blink-caret 0.75s step-end 4.9;
+    -webkit-animation: appear 0s forwards, typing-2 3.5s steps(18, end), blink-caret 0.75s step-end 4.9; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: appear 0s forwards, typing-2 3.5s steps(18, end), blink-caret 0.75s step-end 4.9; /* Firefox < 16 */
+    -ms-animation: appear 0s forwards, typing-2 3.5s steps(18, end), blink-caret 0.75s step-end 4.9; /* Internet Explorer */
+    -o-animation: appear 0s forwards, typing-2 3.5s steps(18, end), blink-caret 0.75s step-end 4.9; /* Opera < 12.1 */
+    animation: appear 0s forwards, typing-2 3.5s steps(18, end), blink-caret 0.75s step-end 4.9;
 
     animation-delay: 2.4s;
 }
