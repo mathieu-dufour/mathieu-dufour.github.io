@@ -31,6 +31,9 @@
     --nav-bar-text: #ffffff;
 
     --section-header: #ffffff;
+
+    --contact-info: #000000;
+    --contact-info-hover: #4b4b4b;
 }
 
 a {
@@ -156,7 +159,7 @@ main {
 nav {
     position: fixed;
     left: 3rem;
-    top: 60%;
+    top: 55%;
     transform: translateY(-50%);
     z-index: 1;
 
@@ -268,8 +271,9 @@ nav {
     font-weight: normal;
     position: absolute;
     top: 0;
+    left: 14rem;
     height: 20%;
-    width: 100%;
+    width: calc(100vw - 17rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -280,7 +284,7 @@ nav {
     width: calc(100vw - 17rem);
     position: absolute;
     left: 14rem;
-    bottom: 3rem;
+    bottom: 6rem;
 
     display: flex;
     flex-direction: column;
@@ -371,6 +375,15 @@ nav {
 .horizontal-card .text-container p {
     color: var(--card-text);
     font-size: 1rem;
+}
+
+.horizontal-card .text-container a {
+    color: var(--card-text);
+    font-size: 1rem;
+}
+
+.horizontal-card .text-container a:hover {
+    color: var(--card-header-text);
 }
 
 .flip-card button {
@@ -516,7 +529,7 @@ nav {
 }
 
 .more-grid {
-    height: 440px;
+    height: 492px;
     width: 850px;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -564,10 +577,16 @@ nav {
     background: var(--primary-logo-background);
     border-radius: 0 0 19px 19px;
     height: 60%;
+    padding-top: 5px;
+}
+
+.more-grid .date {
+    color: var(--skill-level-text);
+    font-size: 0.9rem;
+    margin-left: 19px;
 }
 
 .more-grid .content-body ul {
-    padding-top: 5px;
     margin-left: 37px;
     color: var(--skill-level-text);
 }
@@ -577,6 +596,44 @@ nav {
 }
 .more-grid .content-body a:hover {
     color: black;
+}
+
+.contact-info-container {
+    background-color: var(--primary-logo-background);
+    box-shadow: 0 2px #1b1b1b, inset 0 2px 2px 0 hsl(0 0% 100% / 0.24);
+    border-radius: 19px;
+    width: 481px;
+    height: 276px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.contact-info-element {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.contact-info-container img {
+    height: 50px;
+    width: 50px;
+}
+
+.contact-info {
+    color: var(--contact-info);
+}
+
+.contact-info-element:hover > .contact-info{
+    color: var(--contact-info-hover);
+}
+
+/* Change svg fill color from black to gray on hover */
+.contact-info-element:hover > img {
+    filter: invert(0.3);
 }
 
 footer {
