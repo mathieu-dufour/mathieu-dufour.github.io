@@ -65,9 +65,9 @@
                                         <p>Desautels Faculty of Management</p>
                                         <!--p>GPA: 3.42/4.0</p-->
                                     </div>
-                                    <button onclick="flipCard('mcgill', 'back')">Relevant coursework</button>
+                                    <button onclick="flipCard('mcgill', 'back', 'X')">Relevant coursework</button>
                                 </div>
-                                <div class="flip-card-back" onmouseleave="flipCard('mcgill', 'front')">
+                                <div class="flip-card-back" onmouseleave="flipCard('mcgill', 'front', 'X')">
                                     <div class="text-container">
                                         <h1>Relevant Coursework</h1>
                                         <ul>
@@ -103,7 +103,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <button onclick="flipCard('mcgill', 'front')">Back</button>
+                                    <button onclick="flipCard('mcgill', 'front', 'X')">Back</button>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +116,6 @@
                             <img class="logo" src="assets/Nanyang_Technological_University-Logo.wine.svg" />
                         </a>
 
-
                         <div class="flip-card">
                             <div class="flip-card-inner" id="ntu-flip-card">
                                 <div class="flip-card-front">
@@ -128,9 +127,9 @@
                                         <p>School of Computer Science and Engineering</p>
                                         <p>Exchange semester aborad</p>
                                     </div>
-                                    <button onclick="flipCard('ntu', 'back')">Relevant coursework</button>
+                                    <button onclick="flipCard('ntu', 'back', 'X')">Relevant coursework</button>
                                 </div>
-                                <div class="flip-card-back" onmouseleave="flipCard('ntu', 'front')">
+                                <div class="flip-card-back" onmouseleave="flipCard('ntu', 'front', 'X')">
                                     <div class="text-container">
                                         <h1>Relevant Coursework</h1>
                                         <ul>
@@ -148,7 +147,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <button onclick="flipCard('ntu', 'front')">Back</button>
+                                    <button onclick="flipCard('ntu', 'front', 'X')">Back</button>
                                 </div>
                             </div>
                         </div>
@@ -268,30 +267,133 @@
                 <div class="section-container">
                     <div class="more-grid">
 
+                        <div class="more-flip-card">
+                            <div class="more-flip-card-inner" id="hackathon-flip-card">
+                                <div class="more-flip-card-front">
+                                    <div class="content">
+                                        <div class="content-header">
+                                            <a class="logo-link" target="_blank"
+                                                href="https://www.physics.mcgill.ca/hackathon/">
+                                                <img class="header-logo" src="assets/physics-hackathon.png" />
+                                            </a>
+                                            <div class="header-title">
+                                                Winner of the McGill Physics Hackathon (People’s Choice Award)
+                                            </div>
+                                        </div>
+                                        <div class="content-body">
+                                            <div class="date"><i>7–8 November 2020</i></div>
+                                            <ul>
+                                                <li>Non-newtonian and newtonian web-based fluid simulator</li>
+                                                <li>Using p5.js along with Vue.js and Chart.js</li>
+                                                <li>
+                                                    <a target="_blank"
+                                                        href="https://devpost.com/software/ez-fluid-simulator?fbclid=IwAR1HMbahgsVTjS7yn2gGHK97oD0mfi1pQFYM4towNKkQl0KxCHRPuMdHJc8">Link
+                                                        to Devpost</a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank"
+                                                        href="https://github.com/mathieu-dufour/physics-hackathon">
+                                                        Link to GitHub
+                                                        repository</a>
+                                                </li>
+                                            </ul>
+                                            <button onclick="flipCard('hackathon', 'back', 'Y')">More
+                                                hackathons</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="more-flip-card-back" onmouseleave="flipCard('hackathon', 'front', 'Y')">
+                                    <div class="content">
+                                        <div class="header-container">
+                                            <a class="logo-link" target="_blank"
+                                                href="https://hacknroll.nushackers.org/">
+                                                <img src="assets/hacknroll_logo.png" />
+                                            </a>
+                                            <h1>Hack&Roll 2020 (National University of Singapore)</h1>
+                                            <div class="date"><i>18–19 January 2020</i></div>
+                                        </div>
+                                        <ul>
+                                            <li>Job posting mobile app (Android & IOS) for university campuses.</li>
+                                            <li>Technologies: Dart (Flutter SDK) & Google Firebase</li>
+                                        </ul>
+                                        <div class="header-container">
+                                            <a class="logo-link" target="_blank" href="https://mchacks.ca/">
+                                                <img src="assets/mchacks_VI_logo.png" />
+                                            </a>
+                                            <h1>McHacks 6 (McGill University)</h1>    
+                                            <div class="date"><i>2–3 February 2019</i></div>
+                                        </div>
+                                        <ul>
+                                            <li>Study manager Android app for students.</li>
+                                            <li>Technologies: Java & XML (Android Studio)</li>
+                                        </ul>
+                                        <button onclick="flipCard('hackathon', 'front', 'Y')">Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="more-flip-card">
+                            <div class="more-flip-card-inner" id="ml-flip-card">
+                                <div class="more-flip-card-front">
+                                    <div class="content">
+                                        <div class="content-header">
+                                            <div class="header-title">
+                                                Implementation of a Convolutional Neural Network for Multi-Label
+                                                Classification of Image Data
+                                            </div>
+                                        </div>
+                                        <div class="content-body">
+                                            <div class="date"><i>December 2020</i></div>
+                                            <ul>
+                                                <li>Classification of images containing 1 to 5 handwritten digits</li>
+                                                <li>Top 5 out of 247 competitors (Kaggle Competition)</li>
+                                                <li>Test accuracy of 99.821% on unseen dataset of 14,000 images</li>
+                                                <li>Use of TensorFlow and PyTorch</li>
+                                            </ul>
+                                            <button onclick="flipCard('ml', 'back', 'Y')">More ML projets</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="more-flip-card-back" onmouseleave="flipCard('ml', 'front', 'Y')">
+                                    <div class="content">
+                                        <h1>Prediction of number of hospitalization cases of COVID-19 based on symptom
+                                            search trends</h1>
+                                        <ul>
+                                            <li>Comparison of the prediction accuracy of K-nearest neighbours (KNN) and
+                                                decision trees</li>
+                                            <li>Visualization using Principal Component Analysis</li>
+                                            <li>k-means clustering to find relations</li>
+                                        </ul>
+                                        <h1>Implementation from scratch of multi-class logistic regression and gradient
+                                            descent</h1>
+                                        <ul>
+                                            <li>Only using general utilities (NumPy, pandas)</li>
+                                        </ul>
+                                        <button onclick="flipCard('ml', 'front', 'Y')">Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="content">
                             <div class="content-header">
-                                <a class="logo-link" target="_blank" href="https://www.physics.mcgill.ca/hackathon/">
-                                    <img class="header-logo" src="assets/physics-hackathon.png" />
-                                </a>
                                 <div class="header-title">
-                                    Winner of the McGill Physics Hackathon (People’s Choice Award)
+                                    Implementation of a GitHub Action Release Pipeline for an Open Source Software
                                 </div>
                             </div>
                             <div class="content-body">
-                                <div class="date"><i>7–8 November 2020</i></div>
+                                <div class="date"><i>November–December 2020</i></div>
                                 <ul>
-                                    <li>Non-newtonian and newtonian web-based fluid simulator</li>
-                                    <li>Using p5.js along with Vue.js and Chart.js</li>
-                                    <li>
-                                        <a target="_blank"
-                                            href="https://devpost.com/software/ez-fluid-simulator?fbclid=IwAR1HMbahgsVTjS7yn2gGHK97oD0mfi1pQFYM4towNKkQl0KxCHRPuMdHJc8">Link
-                                            to Devpost</a>
+                                    <li>Golang-based OSS
+                                        <a target="_blank" href="https://github.com/denverquane/automuteus">
+                                            (AutoMuteUs)
+                                        </a>
                                     </li>
-                                    <li>
-                                        <a target="_blank" href="https://github.com/mathieu-dufour/physics-hackathon">
-                                            Link to GitHub
-                                            repository</a>
-                                    </li>
+                                    <li>Automated testing in CI/CD pipeline</li>
+                                    <li>Unit Test Coverage</li>
+                                    <li>Build trigger on push</li>
+                                    <li>Code linting (GolangCI) added to workflow</li>
                                 </ul>
                             </div>
                         </div>
@@ -299,69 +401,17 @@
                         <div class="content">
                             <div class="content-header">
                                 <div class="header-title">
-                                    Convolution Neural Network for Multi-Label Classification of Image Data
+                                    Publication of a Book on how the Universe Works
                                 </div>
                             </div>
                             <div class="content-body">
-                                <div class="date"><i>December 2020</i></div>
+                                <div class="date"><i>January–May 2018</i></div>
                                 <ul>
-                                    <li>Classification of images containing 1 to 5 handwritten digits</li>
-                                    <li>Top 5 out of 247 competitors (Kaggle Competition)</li>
-                                    <li>Test accuracy of 99.821% on unseen dataset of 14,000 images</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <div class="content-header">
-                                <a class="logo-link" target="_blank" href="https://www.physics.mcgill.ca/hackathon/">
-                                    <img class="header-logo" src="assets/physics-hackathon.png" />
-                                </a>
-                                <div class="header-title">
-                                    Winner of the McGill Physics Hackathon (People’s Choice Award)
-                                </div>
-                            </div>
-                            <div class="content-body">
-                                <ul>
-                                    <li>Non-newtonian and newtonian web-based fluid simulator</li>
-                                    <li>Using p5.js along with Vue.js and Chart.js</li>
-                                    <li>
-                                        <a target="_blank"
-                                            href="https://devpost.com/software/ez-fluid-simulator?fbclid=IwAR1HMbahgsVTjS7yn2gGHK97oD0mfi1pQFYM4towNKkQl0KxCHRPuMdHJc8">Link
-                                            to the Devpost</a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank"
-                                            href="https://github.com/mathieu-dufour/physics-hackathon">GitHub
-                                            repository</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <div class="content-header">
-                                <a class="logo-link" target="_blank" href="https://www.physics.mcgill.ca/hackathon/">
-                                    <img class="header-logo" src="assets/physics-hackathon.png" />
-                                </a>
-                                <div class="header-title">
-                                    Winner of the McGill Physics Hackathon (People’s Choice Award)
-                                </div>
-                            </div>
-                            <div class="content-body">
-                                <ul>
-                                    <li>Non-newtonian and newtonian web-based fluid simulator</li>
-                                    <li>Using p5.js along with Vue.js and Chart.js</li>
-                                    <li>
-                                        <a target="_blank"
-                                            href="https://devpost.com/software/ez-fluid-simulator?fbclid=IwAR1HMbahgsVTjS7yn2gGHK97oD0mfi1pQFYM4towNKkQl0KxCHRPuMdHJc8">Link
-                                            to the Devpost</a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank"
-                                            href="https://github.com/mathieu-dufour/physics-hackathon">GitHub
-                                            repository</a>
-                                    </li>
+                                    <li>I wrote a 40 pages scientific essay that explains how the Universe
+                                        works, from the Big Bang to the theories about how it will end.</li>
+                                    <li>The essay has been officially published at the library of the Cégep de
+                                        Sainte-Foy.</li>
+                                    <li>Formatted with LaTeX</li>
                                 </ul>
                             </div>
                         </div>
@@ -400,7 +450,7 @@
 
     </main>
 
-    <!-- <div class="intro">
+    <div class="intro">
         <div class="intro-text">
             <div id="input-1">
                 <span class="username">mathieu-dufour</span><span class="prompt">:~$</span>
@@ -416,7 +466,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <footer><small>
             <p id="copyright"></p>

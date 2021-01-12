@@ -24,9 +24,9 @@ $('.intro').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd',
 var currentYear = new Date().getFullYear();
 document.getElementById('copyright').innerHTML = "&copy; Copyright " + currentYear + ", Mathieu Dufour";
 
-function flipCard(cardName, side) {
-	if (side == 'front') rotateCmd = "rotateX(0deg)";
-	else rotateCmd = "rotateX(180deg)";
+function flipCard(cardName, side, axis) {
+	if (side == 'front') rotateCmd = "rotate" + axis + "(0deg)";
+	else rotateCmd = "rotate" + axis + "(180deg)";
 
 	var cardID = cardName + '-flip-card';
 
