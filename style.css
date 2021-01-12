@@ -302,7 +302,7 @@ nav {
 }
 
 .horizontal-card {
-    width: 850px;
+    width: 869px;
     height: 173px;
     max-height: 42.66%;
     min-height: 154px;
@@ -364,7 +364,7 @@ nav {
     flex: 5;
     height: 100%;
     width: 100%;
-    margin-left: 1rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,9 +386,19 @@ nav {
     font-size: 1rem;
 }
 
+.horizontal-card .text-container ul {
+    color: var(--card-text);
+    font-size: 1rem;
+    padding-left: 23px;
+}
+
 .horizontal-card .text-container a {
     color: var(--card-text);
     font-size: 1rem;
+}
+
+.horizontal-card .text-container ul + a {
+    padding-left: 7px;
 }
 
 .horizontal-card .text-container a:hover {
@@ -415,11 +425,6 @@ nav {
 .flip-card-back h1 {
     font-size: 1.5rem;
     color: var(--card-header-text);
-}
-
-.flip-card-back ul {
-    margin-left: 23px;
-    color: var(--card-text);
 }
 
 .flip-card-back a {
