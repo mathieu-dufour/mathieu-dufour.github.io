@@ -209,8 +209,8 @@ nav {
 .page-title-container {
     position: absolute;
     left: 50%;
-    top: 30%;
-    transform: translate(-50%, -30%);
+    top: 34%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -552,7 +552,7 @@ nav {
 /*Smaller icons for technologies section */
 .skill-category.technologies img {
     max-height: 43px;
-    max-width: 119px
+    max-width: 119px;
 }
 
 .horizontal-card.experience {
@@ -1109,5 +1109,230 @@ footer {
     }
     100% {
         opacity: 0;
+    }
+}
+
+/* FOR MOBILE PHONES TODO: 768px*/
+@media only screen and (max-width: 824px) {
+    /* Fixed page elements */
+    nav {
+        display: none;
+    }
+
+    #logo {
+        left: 2rem;
+        top: 2rem;
+        font-size: 1.5rem;
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+
+    /* Section heights */
+    .education-section.fp-section {
+        height: 905px !important;
+    }
+
+    .skills-section.fp-section {
+        height: 1061px !important;
+    }
+
+    .experience-section.fp-section {
+        height: 890px !important;
+    }
+
+    .more-section.fp-section {
+        height: 1663px !important;
+    }
+    
+    .contact-section.fp-section {
+        height: 100vh !important;
+    }
+
+    /* Home page */
+    .page-title-container h1 {
+        font-size: 2rem;
+    }
+    .page-title-container h3 {
+        font-size: 1rem;
+    }
+    .page-title-container {
+        padding: 13px;
+        border-radius: 30px;
+    }
+    .landing {
+        background-position: 79% 0%;
+        background-size: auto 118%;
+        height: 100vh !important; /* So that home page background image height is 100vh */
+    }
+
+    /* So that home page background image height is 100vh */
+    .fp-tableCell {
+        height: 100vh !important;
+    }
+
+    .page-title-container {
+        top: 14%;
+        transform: translate(-50%, 50%);
+    }
+
+    /* General sections styling */
+    .section h2 {
+        /* top: 15%; */
+        top: 8rem;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: fit-content;
+        height: fit-content;
+        font-size: 2.5rem;
+    }
+
+    .section-container {
+        /* height: 85%; */
+        height: fit-content;
+        width: 100%;
+        left: 0;
+        /* top: 15%; */
+        top: 8rem;
+    }
+
+    /* Education page */
+    .horizontal-card {
+        /* flex-direction: column; */
+        display: block;
+        width: calc(100% - 2rem);
+        height: fit-content;
+        margin: 1rem;
+    }
+
+    .horizontal-card .logo-link {
+        height: 135px;
+    }
+    .horizontal-card .logo {
+        border-radius: 19px 19px 0 0;
+        padding: 20px 48px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .horizontal-card .text-container {
+        justify-content: start;
+        padding: 1rem;
+    }
+
+    .flip-card {
+        height: 205px;
+        width: 100%;
+    }
+
+    .flip-card-inner {
+        height: 100%;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        border-radius: 0 0 19px 19px;
+        box-shadow: 0 2px #1b1b1b;
+        display: block;
+        height: 100%;
+    }
+
+    .flip-card-back {
+        transform: rotateY(180deg);
+    }
+
+    .flipped-card-X {
+        transform: rotateY(180deg);
+    }
+    .flipped-card-Y {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card button {
+        position: absolute;
+        margin: 0;
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    /* Skills section */
+    .skills-grid {
+        height: fit-content;
+        width: 385px;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skill-category.spoken-languages {
+        height: 92px;
+    }
+
+    .skill-category.technologies {
+        height: 308px;
+    }
+
+    .skill-category.programming-languages {
+        height: 440px;
+    }
+
+    /* More section */
+    .more-grid {
+        height: fit-content;
+        width: calc(100% - 2rem);
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .more-flip-card {
+        height: 356.5px;        
+    }
+
+    .more-grid .content {
+        height: 356.5px;
+    }
+
+    .more-grid .content-body {
+        padding: 5px;
+    }
+
+    /* Contact section */
+    .contact-section .section-container {
+        transform: translate(0, -50%);
+        top: 50%;
+    }
+
+    .contact-info-container {
+        width: calc(100% - 2rem);
+        margin: 1rem;
+    }
+
+    .contact-info-element {
+        display: grid;
+        grid-template-columns: 50px auto;
+    }
+
+    .contact-info-container img {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .flipped-card-X .flip-card-back {
+        transform: rotateX(180deg);
+    }
+    .flipped-card-Y .flip-card-back {
+        transform: rotateY(180deg);
+    }
+
+    .flipped-card-X {
+        transform: rotateX(180deg);
+    }
+    .flipped-card-Y {
+        transform: rotateY(180deg);
     }
 }
