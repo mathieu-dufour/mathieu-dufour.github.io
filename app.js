@@ -3,6 +3,7 @@ new fullpage('#fullpage', {
 	//options
 	autoScrolling: true,
 	responsiveWidth: 1051,
+	responsiveHeight: 626,
 	anchors: ["home", "education", "skills", "experience", "more", "contact"],
 	licenseKey: '40319E3A-196B4662-8916DF4C-3753A081',
 	// responsiveWidth: 600,
@@ -10,7 +11,7 @@ new fullpage('#fullpage', {
 
 // disable scrolling during intro
 fullpage_api.setAllowScrolling(false);
-setTimeout(() => {  fullpage_api.setAllowScrolling(true); }, 10000);
+setTimeout(() => {  fullpage_api.setAllowScrolling(true); }, 6000);
 
 // To completely remove intro element from dom when it is done
 var animEndCount = 0;

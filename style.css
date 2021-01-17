@@ -1112,80 +1112,8 @@ footer {
     }
 }
 
-/* MOBILE PHONES LANDSCAPE */
-@media only screen and (max-height: 435px) {
-    .landing {
-        background-size: cover !important;
-    }
-}
-
-/* MOBILE PHONES PORTRAIT */
-@media only screen and (max-width: 768px) {
-    /* Fixed page elements */
-    nav {
-        display: none;
-    }
-    /* General sections styling */
-    .section h2 {
-        /* top: 15%; */
-        top: 8rem;
-        left: 50%;
-        transform: translate(-50%, -100%);
-        width: fit-content;
-        height: fit-content;
-        font-size: 2.5rem;
-    }
-
-    .section-container {
-        /* height: 85%; */
-        height: fit-content;
-        width: 100%;
-        left: 0;
-        /* top: 15%; */
-        top: 8rem;
-    }
-
-    .landing {
-        background-position: 79% 0%;
-        background-size: auto 118%;
-        height: 100vh !important; /* So that home page background image height is 100vh */
-    }
-}
-
-/* TABLETS */
-@media only screen and (max-width: 1050px) and (min-width: 769px) {
-    nav {
-        left: 2rem;
-        width: auto;
-    }
-
-    .nav-links a {
-        font-size: 1rem;
-        padding: 15px 9px;
-    }
-
-    /* General sections styling */
-    .section h2 {
-        /* top: 15%; */
-        top: 7rem;
-        left: 10rem;
-        transform: translate(0, -100%);
-        width: calc(100% - 12rem);
-        height: fit-content;
-        font-size: 2.3rem;
-    }
-
-    .section-container {
-        height: fit-content;
-        top: 7rem;
-        width: calc(100% - 12rem);
-        left: 10rem;
-    }
-    
-}
-
 /* General settings below 1050 width */
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1050px), only screen and (max-height: 625px) {
     /* Intro */
     .intro-text {
         font-size: 1rem;
@@ -1203,19 +1131,19 @@ footer {
 
     /* Section heights */
     .education-section.fp-section {
-        height: 905px !important;
+        height: 869px !important;
     }
 
     .skills-section.fp-section {
-        height: 1061px !important;
+        height: 1049px !important;
     }
 
     .experience-section.fp-section {
-        height: 890px !important;
+        height: 822px !important;
     }
 
     .more-section.fp-section {
-        height: 1663px !important;
+        height: 1370px !important;
     }
 
     .contact-section.fp-section {
@@ -1254,7 +1182,7 @@ footer {
     }
 
     .horizontal-card .logo-link {
-        height: 135px;
+        height: 130px;
     }
     .horizontal-card .logo {
         border-radius: 19px 19px 0 0;
@@ -1383,5 +1311,150 @@ footer {
     }
     .flipped-card-Y {
         transform: rotateY(180deg);
+    }
+}
+
+/* Smaller laptop */
+@media only screen and (max-height: 705px) {
+    .more-grid {
+        height: 530px;
+    }
+
+    .section-container {
+        bottom: 5rem;
+    }
+}
+
+/* TABLETS */
+@media only screen and (max-width: 1050px) and (min-width: 769px),
+    only screen and (max-height: 625px) and (min-width: 769px) {
+    nav {
+        left: 2rem;
+        width: auto;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        padding: 15px 9px;
+    }
+
+    /* General sections styling */
+    .section h2 {
+        /* top: 15%; */
+        top: 7rem;
+        left: 10rem;
+        transform: translate(0, -100%);
+        width: calc(100% - 12rem);
+        height: fit-content;
+        font-size: 2.3rem;
+    }
+
+    .section-container {
+        height: fit-content;
+        top: 7rem;
+        width: calc(100% - 12rem);
+        /* width: 511px; */
+        left: 10rem;
+    }
+
+    .horizontal-card {
+        width: 445px;
+    }
+
+    .more-grid {
+        width: 511px;
+    }
+
+    .more-flip-card {
+        height: 283.5px;
+    }
+
+    .more-grid .content {
+        height: 283.5px;
+    }
+
+    .contact-info-container {
+        width: 476px;
+    }
+}
+
+/* MOBILE PHONES PORTRAIT */
+@media only screen and (max-width: 768px) {
+    /* Section heights */
+    .education-section.fp-section {
+        height: 905px !important;
+    }
+
+    .skills-section.fp-section {
+        height: 1061px !important;
+    }
+
+    .experience-section.fp-section {
+        height: 890px !important;
+    }
+
+    .more-section.fp-section {
+        height: 1663px !important;
+    }
+
+    .contact-section.fp-section {
+        height: 100vh !important;
+    }
+
+    /* Fixed page elements */
+    nav {
+        display: none;
+    }
+    /* General sections styling */
+    .section h2 {
+        /* top: 15%; */
+        top: 8rem;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: fit-content;
+        height: fit-content;
+        font-size: 2.5rem;
+    }
+
+    .section-container {
+        /* height: 85%; */
+        height: fit-content;
+        width: 100%;
+        left: 0;
+        /* top: 15%; */
+        top: 8rem;
+    }
+
+    .landing {
+        background-position: 79% 0%;
+        background-size: auto 118%;
+        height: 100vh !important; /* So that home page background image height is 100vh */
+    }
+
+    .horizontal-card {
+        max-width: 445px;
+    }
+
+    .more-grid {
+        max-width: 511px;
+    }
+
+    /* .more-flip-card {
+        min-height: 283.5px;
+    } */
+
+    .more-grid .content {
+        min-height: 283.5px;
+    }
+
+    .contact-info-container {
+        max-width: 476px;
+    }
+}
+
+/* MOBILE PHONES LANDSCAPE */
+@media only screen and (max-height: 435px) {
+    .landing {
+        background-size: cover;
     }
 }
