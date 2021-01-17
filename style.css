@@ -1112,18 +1112,86 @@ footer {
     }
 }
 
-/* FOR MOBILE PHONES TODO: 768px*/
-@media only screen and (max-width: 824px) {
-    /* Intro */
-    .intro-text {
-        font-size: 1rem;
+/* MOBILE PHONES LANDSCAPE */
+@media only screen and (max-height: 435px) {
+    .landing {
+        background-size: cover !important;
     }
-    
+}
+
+/* MOBILE PHONES PORTRAIT */
+@media only screen and (max-width: 768px) {
     /* Fixed page elements */
     nav {
         display: none;
     }
+    /* General sections styling */
+    .section h2 {
+        /* top: 15%; */
+        top: 8rem;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: fit-content;
+        height: fit-content;
+        font-size: 2.5rem;
+    }
 
+    .section-container {
+        /* height: 85%; */
+        height: fit-content;
+        width: 100%;
+        left: 0;
+        /* top: 15%; */
+        top: 8rem;
+    }
+
+    .landing {
+        background-position: 79% 0%;
+        background-size: auto 118%;
+        height: 100vh !important; /* So that home page background image height is 100vh */
+    }
+}
+
+/* TABLETS */
+@media only screen and (max-width: 1050px) and (min-width: 769px) {
+    nav {
+        left: 2rem;
+        width: auto;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        padding: 15px 9px;
+    }
+
+    /* General sections styling */
+    .section h2 {
+        /* top: 15%; */
+        top: 7rem;
+        left: 10rem;
+        transform: translate(0, -100%);
+        width: calc(100% - 12rem);
+        height: fit-content;
+        font-size: 2.3rem;
+    }
+
+    .section-container {
+        height: fit-content;
+        top: 7rem;
+        width: calc(100% - 12rem);
+        left: 10rem;
+    }
+    
+}
+
+/* General settings below 1050 width */
+@media only screen and (max-width: 1050px) {
+    /* Intro */
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    /* Fixed page elements */
     #logo {
         left: 2rem;
         top: 2rem;
@@ -1149,7 +1217,7 @@ footer {
     .more-section.fp-section {
         height: 1663px !important;
     }
-    
+
     .contact-section.fp-section {
         height: 100vh !important;
     }
@@ -1165,11 +1233,6 @@ footer {
         padding: 13px;
         border-radius: 30px;
     }
-    .landing {
-        background-position: 79% 0%;
-        background-size: auto 118%;
-        height: 100vh !important; /* So that home page background image height is 100vh */
-    }
 
     /* So that home page background image height is 100vh */
     .fp-tableCell {
@@ -1179,26 +1242,6 @@ footer {
     .page-title-container {
         top: 14%;
         transform: translate(-50%, 50%);
-    }
-
-    /* General sections styling */
-    .section h2 {
-        /* top: 15%; */
-        top: 8rem;
-        left: 50%;
-        transform: translate(-50%, -100%);
-        width: fit-content;
-        height: fit-content;
-        font-size: 2.5rem;
-    }
-
-    .section-container {
-        /* height: 85%; */
-        height: fit-content;
-        width: 100%;
-        left: 0;
-        /* top: 15%; */
-        top: 8rem;
     }
 
     /* Education page */
@@ -1218,6 +1261,7 @@ footer {
         padding: 20px 48px;
         height: 100%;
         width: 100%;
+        object-fit: contain;
     }
 
     .horizontal-card .text-container {
@@ -1293,7 +1337,7 @@ footer {
     }
 
     .more-flip-card {
-        height: 356.5px;        
+        height: 356.5px;
     }
 
     .more-grid .content {
